@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Blog preview card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        font-family: figtree;
+      }
+      body {
+        background-color: hsl(47, 88%, 63%);
+      }
+      p {
+        font-size: 16px;
+      }
+      .container {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        /* Set the height of the container as needed */
+      }
+      .card {
+        width: 350px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 6%;
+        box-shadow: 5px 5px;
+      }
+      .card-content {
+        padding: 20px;
+      }
+
+      .header-image {
+        width: 100%;
+        border-radius: 5%;
+        margin-bottom: 10px;
+      }
+      .text-html-css {
+        width: 100%;
+        text-align: justify;
+      }
+      .publisher {
+        display: flex;
+      }
+      .publisher img {
+        height: 40px;
+      }
+      .publisher p {
+        margin: 0;
+        margin: 6px 10px;
+      }
+      .learn-btn {
+        background-color: hsl(47, 88%, 63%);
+        padding: 5px 10px;
+        border-style: none;
+        border-radius: 8%;
+        font-weight: 800;
+      }
+      .head-text {
+        font-size: 20px;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-content">
+          <img class="header-image" src="/assets/images/illustration-article.svg" />
+
+          <button class="learn-btn">Learning</button>
+          <p>Published 21 december 2023</p>
+          <p class="head-text">HTML and CSS foundations</p>
+          <p class="text-html-css">
+            These languages are the backbone of every<br />
+            website, defining structure, content and<br />
+            presentation
+          </p>
+          <div class="publisher">
+            <img src="/assets/images/image-avatar.webp" />
+
+            <p>Greg Hooper</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
